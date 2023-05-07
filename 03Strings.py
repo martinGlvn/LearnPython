@@ -13,3 +13,39 @@ print(saltoLinea)
 # Tabulacion en strings =>
 tabulacion = "\tEste es un string con tabulacion al inicio"
 print(tabulacion)
+
+# Creacion de multiples strings =>
+marca, auto,  año = "Mercedes Benz", "GT50", 1975
+print(auto)
+print(marca)
+print(año)
+
+# Concatenation de strings con variables =>
+print("El %s modelo %s es muy rapido a pesar de ser del año %d" % (marca, auto, año))
+print(f"El {marca} modelo {auto} es muy rapido a pesar de ser del año {año}")
+
+# Desgloze de letras - caracteres en strings =>
+code = "python"
+a, b, c, d, e, f = code
+print(a, b)  # py
+
+# Dividiendo string por longitud =>
+code2 = "JavaScript"
+otroLenguaje = code2[0:4]
+print(otroLenguaje)  # Java
+
+finalCode = code2[4:]
+print(finalCode)  # Script
+
+# Codigo en reversa =>
+reverseCode = code2[::-1]
+print(reverseCode)  # tpircSavaJ
+
+# Funciones de los string =>
+testFunctions = "HolaMiNombreEsMartin"
+print(testFunctions.capitalize())
+print(testFunctions.upper())
+print(testFunctions.count())
+print(testFunctions.isnumeric())
+print(testFunctions.lower())
+print(testFunctions.lower().isupper())
