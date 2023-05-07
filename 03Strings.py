@@ -45,7 +45,25 @@ print(reverseCode)  # tpircSavaJ
 testFunctions = "HolaMiNombreEsMartin"
 print(testFunctions.capitalize())
 print(testFunctions.upper())
-print(testFunctions.count())
 print(testFunctions.isnumeric())
 print(testFunctions.lower())
 print(testFunctions.lower().isupper())
+
+
+# Operadores en strings =>
+
+
+text2 = "Hola Universo como andamo"
+
+print("hola" in text2)  # True
+print(len(text2))  # 13
+print(text2.upper())  # HOLA UNIVERSO
+print(text2.lower())  # hola universo
+print(text2.count('a'))  # 1
+print(text2.swapcase())  # hOLA uNIVERSO
+print(text2.startswith('Hola'))  # True
+print(text2.endswith('Universo'))  # True
+print(text2.replace('Hola', 'Chau'))  # Chau Universo
+print(text2.capitalize())  # Hola universo
+print(text2.title())  # Hola Universo Como Andamo
+print(text2.isdigit())  # False
