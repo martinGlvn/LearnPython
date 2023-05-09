@@ -2,9 +2,11 @@
 # -> Leerá el archivo a través de un módulo denominado csv. Además, realizará una copia profunda de los datos
 # -> para almacenarlos en la memoria mediante un módulo denominado copy.
 
-import csv
+import csv  # Importamos el modulo para leer el csv
 import copy
 
+
+#
 myVehicle = {
     "vin": "<empty>",
     "make": "<empty>",
@@ -14,8 +16,10 @@ myVehicle = {
     "topSpeed": 0,
     "zeroSixty": 0.0,
     "mileage": 0
+
 }
 
+#
 for key, value in myVehicle.items():
     print("{} : {}".format(key, value))
 
@@ -45,6 +49,7 @@ with open('car_fleet.csv') as csvFile:
     print(f'Processed {lineCount} lines.')
     currentVehicle = copy.deepcopy(myVehicle)
 
+#
 for myCarProperties in myInventoryList:
     for key, value in myCarProperties.items():
         print("{} : {}".format(key, value))
