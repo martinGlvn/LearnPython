@@ -41,18 +41,8 @@ print(finalCode)  # Script
 reverseCode = code2[::-1]
 print(reverseCode)  # tpircSavaJ
 
-# Funciones de los string =>
-testFunctions = "HolaMiNombreEsMartin"
-print(testFunctions.capitalize())
-print(testFunctions.upper())
-print(testFunctions.isnumeric())
-print(testFunctions.lower())
-print(testFunctions.lower().isupper())
-
 
 # Operadores en strings =>
-
-
 text2 = "Hola Universo como andamo"
 
 print("hola" in text2)  # True
@@ -67,3 +57,13 @@ print(text2.replace('Hola', 'Chau'))  # Chau Universo
 print(text2.capitalize())  # Hola universo
 print(text2.title())  # Hola Universo Como Andamo
 print(text2.isdigit())  # False
+
+# Indices
+textoIndices = "Estamos estudiando Python"
+print(textoIndices[0])  # E
+print(textoIndices[-1])  # n
+
+# Slicing
+recortartarTexto = "Este texto vamos a recortar"
+print(recortartarTexto[:19])  # Este texto vamos a
+print(recortartarTexto[5:])  # texto vamos a recortar
