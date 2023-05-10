@@ -1,4 +1,6 @@
 # Sets -> Se pueden modificar, no tienen orden, no tienen elementos duplicados
+
+
 primerSet = {'arg', 'bol', 'peru'}
 print(primerSet)
 
