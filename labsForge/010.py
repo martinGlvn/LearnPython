@@ -8,8 +8,10 @@
 with open('preproinsulin-seq.txt', 'r') as archivo:
     contenido = archivo.read()
 
+print(contenido)
 
 eliminoDatos = ["ORIGIN", " ", "//"]
+
 for datos in eliminoDatos:
     contenido = contenido.replace(datos, '')
 
@@ -21,13 +23,17 @@ b = contenido[24:54]
 c = contenido[54:89]
 d = contenido[89:110]
 
+# contenido del archivo .txt
+
 
 def create_file(filename):
     with open(filename, 'w') as file:
-        file.write(b)
+        file.write(a, b, c, d)
 
 
 files = ["preproinsulin-seq-clean.txt",  "lsinsulin-seq-clean.txt",
          "binsulin-seq-clean.txt", "cinsulin-seq-clean.txt", "ainsulin-seq-clean.txt"]
+
+# nombre de los archivos .txt
 for file in files:
     create_file(file)
