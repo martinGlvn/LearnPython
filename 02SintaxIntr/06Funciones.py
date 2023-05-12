@@ -44,6 +44,3 @@ def volumen(a=1, b=1, c=1):
 texto, resultado = volumen(5, 10, 50)
 print(resultado)  # ('tu volumen es', 2500)
 print(texto)
-
-
-# Scope Funciones  ----------------------------------   
