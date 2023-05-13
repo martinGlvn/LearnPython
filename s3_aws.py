@@ -30,8 +30,24 @@ with open("download.jpg", "wb")as f:
 url = s3.generate_presigned_url(
     "get_object",
     Params={"Bucket": BUCKET_NAME, "Key": "mi_imagen.jpg"},
-    ExpiresIn=10
+    ExpiresIn=30  # 30segundos
 )
 print(url)
 
-# Creacion de Bucket S3 ->
+# Creacion de "bucket" S3 ->
+bucket_location = s3.create_bucket(
+    ACL="public-read", Bucket="new-martin-bucket"
+)
+print(bucket_location)
+
+# Copiar objetos de un "bucket" s3 ->
+s3.copy_object(
+    ACL="public-read",
+    Bucket="nuevo-destinto-bucket",
+    CopySource=f"/{BUCKET_NAME}/profile.jpg",
+    key="copia.jpg"
+)
+
+# Obtener detalles/datos de un objeto de un "bucket" s3 ->
+respuestaDatos = s3.get_object(Bucket=BUCKET_NAME, Key="profile.jpg")
+print(respuestaDatos)
