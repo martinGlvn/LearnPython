@@ -50,3 +50,13 @@ else:
     print("seguimos")
 
 # Ciclos Anidaods ->
+
+x = 10
+b = 10
+
+
+def suma():
+    print(x+b)
+
+
+suma()
