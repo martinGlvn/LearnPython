@@ -1,5 +1,5 @@
 # Puede utilizar Linux para realizar muchas tareas administrativas desde el terminal o desde la línea de comandos de Bash. Python proporciona varios módulos que también puede utilizar para ejecutar comandos en la línea de comandos. En este laboratorio, utilizará os.system() y subprocess.run() para ejecutar comandos de Bash desde Python.
-
+#
 # En este laboratorio, deberá realizar lo siguiente:
 
 # utilizar os.system() para ejecutar un comando de Bash
