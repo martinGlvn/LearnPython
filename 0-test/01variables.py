@@ -91,6 +91,3 @@ part_three = "Python is cool, "
 part_four = "and so are you!"
 line_one = part_one, part_two
 line_two = part_three, part_four
-
-#
-# hola facundo
