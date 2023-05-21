@@ -42,7 +42,6 @@ print(inventory)
 inventory[1] = "Iron Bar"
 
 # Agregar elementos a una lista python => .append
-
 cards = []
 cards.append("nvidia")
 cards.append("amd")
@@ -203,4 +202,121 @@ print(nums)  # [1, 5, 6, 7, 8, 9]
 del nums[:]
 print(nums)  # []
 
-#
+# ELimina datos =>
+strongholds = [
+    "Rivendale",
+    "The Morgoth Mountains",
+    "The Lonely Island",
+    "Mordia",
+    "Mordane",
+    "Gondolin",
+]
+del strongholds[0]
+print(strongholds)
+del strongholds[3:5]
+print(strongholds)
+
+# Tuplas =>
+my_tuple = ("this is a tuple", 45, True)
+print(my_tuple[0])  # this is a tuple
+print(my_tuple[1])  # 45
+print(my_tuple[2])  # True
+
+# Tuplas dentro de listas =>
+my_tuples = [
+    ("this is the first tuple in the list", 45, True),
+    ("this is the second tuple in the list", 21, False)
+]
+print(my_tuples[0])  # ('this is the first tuple in the list', 45, True)
+print(my_tuples[1][1])  # 21
+print(my_tuples[1][2])  # False
+
+# Convertir array en tupla =>
+heroes = [
+    "Glorfindel",
+    2093,
+    True,
+    "Gandalf",
+    1054,
+    False,
+    "Gimli",
+    389,
+    False,
+    "Aragorn",
+    87,
+    False,
+]
+hero_tuples = []
+for i in range(0, len(heroes), 3):
+    hero_name = heroes[i]
+    hero_age = heroes[i+1]
+    hero_is_elf = heroes[i+2]
+    hero_tuples.append((hero_name, hero_age, hero_is_elf))
+print(hero_tuples)
+
+# Ejemplo
+numbers = [
+    0,
+    99,
+    2,
+    33,
+    61,
+    44,
+    9,
+    10,
+    12,
+    240,
+    35,
+    9082,
+    1234,
+]
+num_evens = 0
+num_odds = 0
+
+for i in numbers:
+    print(i)
+    if i % 2 == 0:
+        num_evens += 1
+    else:
+        num_odds += 1
+
+
+# Ejemplo =>
+players = [
+    "Harry",
+    "Hermione",
+    "Ron",
+    "Ginny",
+    "Fred",
+    "Neville",
+    "Draco",
+    "Luna",
+    "Cho",
+    "Gregory",
+    "Lee",
+    "Michael",
+    "Lavender",
+    "Frank",
+    "Anthony",
+]
+a = []
+b = []
+for i in range(0, len(players)):
+    if i % 2 == 0:
+        a.append(players[i])
+    else:
+        b.append(players[i])
+print(a)
+print(b)
+
+# Ejemplo =>
+answer_sheet = ["A", "A", "C", "D", "D", "B", "C"]
+student_answers = ["A", "B", "C", "A", "D", "B", "C"]
+a = []
+z = 0
+for i in range(0, len(answer_sheet)):
+    if answer_sheet[i] == student_answers[i]:
+        z += 1
+
+p = z*100/len(answer_sheet)
+print(p)
